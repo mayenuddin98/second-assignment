@@ -1,44 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* --------------
 common style 
 ----------------- */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.container {
     margin: 50px 100px 100px 100px;
 }
-h1{
+
+h1 {
     margin: 0;
     padding: 0;
 }
+
 /* ---------------
 home banner style 
 -----------------*/
-.home-banner{
+.home-banner {
     background-color: #1e1e1e;
     border-radius: 30px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.home-banner-text-and-btn{
+
+.home-banner-text-and-btn {
     color: #fff;
     padding: 90px 0 0 70px;
 }
-.home-banner-text-and-btn h1{
+
+.home-banner-text-and-btn h1 {
     font-size: 52px;
     margin-bottom: 10px;
 }
-.home-banner-text-and-btn p{
+
+.home-banner-text-and-btn p {
     margin-bottom: 30px;
-   font-family: cursive;
+    font-family: cursive;
 }
-.home-banner-text-and-btn a{
+
+.home-banner-text-and-btn a {
     text-decoration: none;
     color: #fff;
     padding: 10px 16px;
@@ -46,27 +55,32 @@ home banner style
     background-color: #dd0000;
     border-radius: 6px;
 }
-.home-banner-text-and-btn a:hover{
+
+.home-banner-text-and-btn a:hover {
     color: #dd0000;
     background-color: #ffffff;
 }
-.home-banner-image{
+
+.home-banner-image {
     width: 480px;
     height: 510px;
     padding-top: 50px;
 }
-.home-banner-image img{
+
+.home-banner-image img {
     width: 100%;
     height: 100%;
     position: relative;
 }
+
 /*--------------------- 
    blogs section style 
 -----------------------*/
-.categories-and-blogs{
+.categories-and-blogs {
     display: flex;
 }
-.categories{
+
+.categories {
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -76,7 +90,8 @@ home banner style
     padding: 15px 0;
     margin-right: 20px;
 }
-.categories .deactive{
+
+.categories .deactive {
     text-decoration: none;
     color: #1e1e1e;
     margin: 15px 30px 15px 30px;
@@ -86,12 +101,14 @@ home banner style
     border-radius: 6px;
     text-align: center;
 }
-.categories .deactive:hover{
-  color: #ffffff;
-  background-color: #dd0000;
-   
+
+.categories .deactive:hover {
+    color: #ffffff;
+    background-color: #dd0000;
+
 }
-.categories .active{
+
+.categories .active {
     text-decoration: none;
     color: #ffffff;
     margin: 15px 30px 15px 30px;
@@ -101,28 +118,35 @@ home banner style
     border-radius: 6px;
     text-align: center;
 }
-.categories .active:hover{
+
+.categories .active:hover {
     color: #1e1e1e;
-    background-color: #ffffff;     
+    background-color: #ffffff;
 }
-.all-blogs{
+
+.all-blogs {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
-.blogs{
+
+.blogs {
     width: 280px;
     box-shadow: 3px 3px 7px -6px #dd0000;
     border-radius: 10px;
 }
-.blog-image img{
+
+.blog-image img {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 6px;
 }
-.blog-text{
+
+.blog-text {
     padding: 0 20px 0 20px;
 }
-.blog-desc a{
+
+.blog-desc a {
     text-decoration: none;
     color: #161616;
     padding: 1px 10px;
@@ -131,109 +155,132 @@ home banner style
     border-radius: 6px;
     margin-bottom: 15px;
 }
-.blog-desc p{
+
+.blog-desc p {
     margin: 15px 0 10px 0;
 }
-.time-and-comment{
+
+.time-and-comment {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
 }
-.time, .comment{
+
+.time,
+.comment {
     display: flex;
     flex-direction: row;
 }
-.time img{
+
+.time img {
     padding-right: 5px;
 }
-.comment img{
+
+.comment img {
     padding-right: 5px;
 }
+
 /*-------------------------------
          footer style           
  --------------------------------*/
- footer{
+footer {
     height: 300px;
     background-color: #1e1e1e;
- }
- .footer-title{
+}
+
+.footer-title {
     color: #ffffff;
-    padding: 50px 0 0 0 ;
+    padding: 50px 0 0 0;
     text-align: center;
- }
-.footer-item{
+}
+
+.footer-item {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
-.footer-item a{
+
+.footer-item a {
     text-decoration: none;
     color: #ffffff;
     padding: 0 20px 0 20px;
 }
-.footer-item a:hover{
+
+.footer-item a:hover {
     color: #dd0000;
 }
-.sociali-icon{
+
+.sociali-icon {
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
-.sociali-icon a{
+
+.sociali-icon a {
     text-decoration: none;
     color: #ffffff;
     font-size: 30px;
     padding: 0 20px 0 20px;
 }
-.sociali-icon a:hover{
+
+.sociali-icon a:hover {
     color: #dd0000;
 }
+
 /* --------------------------------------
 start media queries for mobail 
 ------------------------------------------ */
-@media only screen and (max-width:576px){
-    .container{
+@media only screen and (max-width:576px) {
+    .container {
         margin: 10px 15px 10px 15px;
     }
+
     /* -------------------------------------home banner responsive start
     ------------------------------------------ */
-    .home-banner{
+    .home-banner {
         border-radius: 15px;
         display: flex;
         flex-direction: column;
     }
-    .home-banner-text-and-btn{
+
+    .home-banner-text-and-btn {
         color: #fff;
         padding: 20px 20px 0 20px;
     }
-    .home-banner-text-and-btn h1{
+
+    .home-banner-text-and-btn h1 {
         padding: 20px 40px 0 40px;
         text-align: center;
         font-size: 30px;
         margin-bottom: 10px;
     }
-    .home-banner-text-and-btn p{
+
+    .home-banner-text-and-btn p {
         margin-bottom: 30px;
         padding: 20px 40px 0 40px;
         text-align: center;
     }
-    .home-banner-text-and-btn a{
-       margin-left: 30%;
+
+    .home-banner-text-and-btn a {
+        margin-left: 30%;
     }
-    .home-banner-image{
+
+    .home-banner-image {
         padding-left: 20%;
         width: 240px;
         height: 260px;
         padding-top: 50px;
     }
+
     /*-------------------------------------
     categories-and-blogs responsive start
     ----------------------------------  */
-    .categories-and-blogs{
+    .categories-and-blogs {
         display: flex;
         flex-direction: column;
     }
-    .categories{
+
+    .categories {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -243,92 +290,101 @@ start media queries for mobail
         border-radius: 10px;
         padding: 15px 0;
     }
-    .categories .deactive{
+
+    .categories .deactive {
         padding: 10px 20px;
         background-color: aliceblue;
     }
-    .categories .active{
+
+    .categories .active {
         padding: 10px 20px;
     }
-    .all-blogs{
-       display: flex;
-       flex-direction: column;
+
+    .all-blogs {
+        display: flex;
+        flex-direction: column;
     }
-    .blogs{
+
+    .blogs {
         margin: 0 12% 0 12%;
         width: 280px;
         box-shadow: 3px 3px 7px -6px #dd0000;
         border-radius: 10px;
     }
+
     /*-------------------------------------- 
         footer responsive style start          
      ------------------------------- ---------*/
-     footer{
+    footer {
         width: 370px;
         height: 500px;
         background-color: #1e1e1e;
         border-radius: 10px;
-     }
-    
-    .footer-item{
+    }
+
+    .footer-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
     }
-    
+
+}
+
+/*responsive for tablet  */
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .container {
+        margin: 15px 20px 0;
     }
-     /*responsive for tablet  */
-     @media only screen and (min-width:577px) and (max-width:992px){
-        .container{
-            margin: 15px 20px 0;
-        }
-        /* ---------------
+
+    /* ---------------
     home banner responsive 
     -----------------*/
-    .home-banner{
-       
+    .home-banner {
+
         border-radius: 10px;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .home-banner-text-and-btn{
+
+    .home-banner-text-and-btn {
         padding: 40px 0 0 40px;
     }
-    .home-banner-text-and-btn h1{
+
+    .home-banner-text-and-btn h1 {
         font-size: 40px;
         margin-bottom: 10px;
     }
-    .home-banner-text-and-btn a{
-    
-    }
-    
-    .home-banner-image{
+
+
+    .home-banner-image {
         width: 300px;
         height: 310px;
         padding-top: 50px;
-        padding-left: 50px ;
+        padding-left: 50px;
     }
-    
+
     /*--------------------- 
        blogs section responsive
     -----------------------*/
-    .categories-and-blogs{
+    .categories-and-blogs {
         display: flex;
         flex-direction: column;
     }
-    .categories{
+
+    .categories {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-         width:100%;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
         height: 108px;
         background-color: aliceblue;
         border-radius: 10px;
         padding: 15px 30px;
         align-items: center;
-    
+
     }
-    .categories .deactive{
+
+    .categories .deactive {
         text-decoration: none;
         color: #1e1e1e;
         padding: 10px 0;
@@ -336,8 +392,8 @@ start media queries for mobail
         background-color: aliceblue;
         border-radius: 6px;
     }
-    
-    .categories .active{
+
+    .categories .active {
         text-decoration: none;
         color: #ffffff;
         margin: 15px 30px 15px 30px;
@@ -347,31 +403,35 @@ start media queries for mobail
         border-radius: 6px;
         text-align: center;
     }
-    .all-blogs{
+
+    .all-blogs {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
     }
-    .blogs{
+
+    .blogs {
         width: 400px;
         box-shadow: 3px 3px 7px -6px #dd0000;
         border-radius: 10px;
     }
-    
+
     /*-------------------------------
              footer responsive          
      --------------------------------*/
-     footer{
+    footer {
         width: 100%;
         height: 300px;
         background-color: #1e1e1e;
-     }
-     .footer-title{
+    }
+
+    .footer-title {
         color: #ffffff;
-        padding: 50px 0 0 0 ;
+        padding: 50px 0 0 0;
         text-align: center;
-     }
-    .footer-item{
+    }
+
+    .footer-item {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -379,5 +439,5 @@ start media queries for mobail
         padding-top: 50px;
         padding-left: 15%;
     }
-    
-    }
+
+}
