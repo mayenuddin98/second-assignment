@@ -43,7 +43,7 @@ home banner style
 }
 
 .home-banner-text-and-btn p {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .home-banner-text-and-btn a {
@@ -216,7 +216,7 @@ footer {
 
 .sociali-icon a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(10, 10, 226);
     font-size: 30px;
     padding: 0 20px 0 20px;
 }
